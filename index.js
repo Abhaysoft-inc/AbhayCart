@@ -30,6 +30,12 @@ app.get('/products', (req, res) => {
 app.get('/electronics', (req, res) => {
   res.render('electronics');
 });
+app.get('/books', (req, res) => {
+  res.render('books');
+});
+app.get('/fashion', (req, res) => {
+  res.render('fashion');
+});
 app.get('/product/:id', (req, res) => {
   res.render('product', { productId: req.params.id });
 });
