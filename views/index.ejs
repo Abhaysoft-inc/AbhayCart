@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AbhayCart - Cheapest Ever Shopping</title>
+    <link rel="stylesheet" href="/bulma.min.css">
+    <link rel="stylesheet" href="/electronics.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="/logo.jpg" width="112" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="/electronics">
+                    Electronics
+                </a>
+                <a class="navbar-item">
+                    Books
+                </a>
+                <a class="navbar-item">
+                    Stationaries
+                </a>
+                <a class="navbar-item">
+                    Fashion
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Jobs
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-medium is-link">
+        <div class="hero-body">
+            <p class="title">
+                Latest Offers only on ABHAYCART
+            </p>
+            <p class="subtitle">
+                Up To 99% Discount and Cashbacks
+            </p>
+        </div>
+    </section>
+
+
+    <!-- slider -->
+
+    <section class="hero is-medium">
+        <div class="hero-body">
+
+            <div class="container">
+                <center>
+                    <h2 class="title">Latest Offers on Smartphones</h2>
+                </center>
+                <!-- Slider content goes here -->
+                <marquee behavior="" direction="left">
+                    <div class="slider p-5">
+                        <ul class="just-product">
+                            <!-- Slide content goes here -->
+                            <li class="slide li-product">
+                                <img src="/iphone.png" class="product-size" alt="Product name">
+                                <h2 class="pdt-title">IPhone 15</h2>
+                                <p class="subtitle">$1999.00</p>
+                                <a href="#" class="button is-success">Buy now</a>
+                            </li>
+                            <li class="slide li-product">
+                                <img src="/s22.png" class="product-size" alt="Product name">
+                                <h2 class="pdt-title">Samsung S25 Ultra</h2>
+                                <p class="subtitle">$549.00</p>
+                                <a href="#" class="button is-success">Buy now</a>
+                            </li>
+                            <li class="slide li-product">
+                                <img src="/iphone.png" class="product-size" alt="Product name">
+                                <h2 class="pdt-title">IPhone 14</h2>
+                                <p class="subtitle">$599</p>
+                                <a href="#" class="button is-success">Buy now</a>
+                            </li>
+                            <li class="slide li-product">
+                                <img src="/s22.png" class="product-size" alt="Product name">
+                                <h2 class="pdt-title">Samsung S23 Ultra</h2>
+                                <p class="subtitle">$399</p>
+                                <a href="/product/:1" class="button is-success">Buy now</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </marquee>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>var slider = bulmaCarousel.attach('.slider', {
+            slidesToScroll: 2,
+            slidesToShow: 3,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            navigation: true,
+            pagination: false
+        });
+    </script>
+    <script src="/just.js"></script>
+
+
+</body>
+
+</html>
